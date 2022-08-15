@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean name="car" class="com.dependent.object.entity.Car">
+   
+   <constructor-arg value="MH-14DZ6785"/>
+	<constructor-arg value="xyz model"/>
+	<constructor-arg value="bike"/>
+	<constructor-arg value="honda"/>
+	
+	 </bean>
+	
+	<bean name="driver" class="com.dependent.object.entity.Driver">
+   
+   <constructor-arg value="68535353"/>
+	<constructor-arg value="joo root"/>
+	<constructor-arg value="755584558652"/>
+	
+	<constructor-arg>
+	
+	
+	<ref bean="car"/>
+	</constructor-arg>
+
+
+	
+	
+</bean>
+</beans>
+ 
