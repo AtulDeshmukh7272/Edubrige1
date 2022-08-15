@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="book1" class="org.spring.entity.Book">
+        <constructor-arg  value="1"></constructor-arg>
+        <constructor-arg  value="Java Programing"></constructor-arg>
+        <constructor-arg  value="S.k. Rao"></constructor-arg>
+   </bean>
+   <bean bookId="book2" class="org.spring.entity.Book">
+   <property bookname="bookId">
+   <value>2</value>
+   </property>
+   <property name="bookName">
+   <value>C Programming</value>
+   </property>
+   <property authorname="author">
+   <value>A.Deshmukh</value>
+   
+   </property>
+   </bean>
+        
+        
+        </beans>
