@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:c="http://www.springframework.org/schema/c" 
+xmlns:p="http://www.springframework.org/schema/p"
+ xmlns="http://www.springframework.org/schema/beans">
+
+<!-- P schema -->
+
+
+<bean destroy-method="xyz" init-method="abc" p:studentCity="Mumbai" p:studentName="Kumar" p:studentId="19783" class="org.example.entity.Student" name="student1"/>
+
+<!-- C schema -->
+
+
+<bean c:studentCity="Chennai" c:studentName="Monali" c:studentId="19723" class="org.example.entity.Student" name="student2"/>
+
+</beans>
