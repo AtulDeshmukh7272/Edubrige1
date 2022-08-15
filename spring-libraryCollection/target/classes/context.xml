@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        
+<bean id="library1" class="org.spring.entity.Library">
+	<constructor-arg value="56888"/>
+	<constructor-arg value="swamivevikananda"/>
+	<constructor-arg>
+	<list>
+	<value>swamii</value>
+	<value>raja yodhaa</value>
+	<value>karma yoga</value>
+	</list>
+	</constructor-arg>
+</bean>
+</beans>
